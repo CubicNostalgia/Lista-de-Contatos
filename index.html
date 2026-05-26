@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer type="module"></script>
+    <title>Contatos Neumórficos</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>WhatsApp Contacts Tracker 🟢</h1>
+        </header>
+
+        <form class="form-container neumorphic" onsubmit="return false;">
+            <div class="input-group">
+                <label for="app-input-nome">Nome</label>
+                <input type="text" id="app-input-nome" class="neumorphic-input" placeholder="Digite o nome completo" autocomplete="new-password">
+            </div>
+            <div class="input-group">
+                <label for="app-input-email">E-mail</label>
+                <input type="email" id="app-input-email" class="neumorphic-input" placeholder="exemplo@email.com" autocomplete="new-password">
+            </div>
+            <div class="input-group">
+                <label for="app-input-imagem">URL da Imagem</label>
+                <input type="text" id="app-input-imagem" class="neumorphic-input" placeholder="Link da foto de perfil" autocomplete="new-password">
+            </div>
+            <div class="input-group">
+                <label for="app-input-estado">Estado</label>
+                <input type="text" id="app-input-estado" class="neumorphic-input" placeholder="Ex: SP, RJ..." autocomplete="new-password">
+            </div>
+            <button id="btnSalvar" class="neumorphic-btn">Salvar Contato</button>
+        </form>
+
+        <div class="table-container neumorphic">
+            <h2>Contatos Salvos</h2>
+            <table class="contacts-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Imagem</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="corpoTabela">
+                    <tr>
+                        <td colspan="4" style="text-align: center; padding: 20px; color: #128C7E;">
+                            Buscando registros na API...
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

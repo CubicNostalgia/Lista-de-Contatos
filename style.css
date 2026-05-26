@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght=400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0ebe1;
+    color: #4a4a4a;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #075E54;
+    font-size: 26px;
+}
+
+.neumorphic {
+    background: #f0ebe1;
+    border-radius: 24px;
+    box-shadow: 12px 12px 24px #ccc6bc, -12px -12px 24px #ffffff;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-weight: 600;
+    color: #128C7E;
+    font-size: 14px;
+    padding-left: 4px;
+}
+
+.neumorphic-input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: #f0ebe1;
+    border-radius: 14px;
+    box-shadow: inset 6px 6px 12px #ccc6bc, inset -6px -6px 12px #ffffff;
+    font-size: 15px;
+    color: #333;
+}
+
+.neumorphic-input:focus {
+    box-shadow: inset 4px 4px 8px #b8b3aa, inset -4px -4px 8px #ffffff;
+}
+
+.neumorphic-btn {
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 14px;
+    background: #128C7E;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 6px 6px 12px #ccc6bc, -6px -6px 12px #ffffff;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+}
+
+.neumorphic-btn:hover {
+    background: #075E54;
+}
+
+.table-container h2 {
+    color: #075E54;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.contacts-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 14px;
+}
+
+.contacts-table th {
+    color: #128C7E;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 2px solid #ccc6bc;
+}
+
+/* Nova estilização segura para as linhas da tabela */
+.contacts-table td {
+    padding: 15px 12px;
+    vertical-align: middle;
+    background: #f0ebe1;
+    box-shadow: 0px 4px 6px -1px rgba(204, 198, 188, 0.5);
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ccc6bc;
+}
+
+.contacts-table td:first-child {
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-left: 1px solid #ffffff;
+    font-weight: bold;
+    color: #777;
+}
+
+.contacts-table td:last-child {
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-right: 1px solid #ccc6bc;
+}
+
+.avatar-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #128C7E;
+    display: block;
+}
+
+.action-btn {
+    background: #f0ebe1;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 8px;
+    box-shadow: 2px 2px 5px #ccc6bc, -2px -2px 5px #ffffff;
+}
+
+.action-btn:active {
+    box-shadow: inset 2px 2px 4px #ccc6bc, inset -2px -2px 4px #ffffff;
+}
